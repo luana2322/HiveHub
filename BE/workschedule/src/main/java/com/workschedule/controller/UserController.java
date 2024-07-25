@@ -36,6 +36,10 @@ private UsersRepository usersRepository;
     public Users login(@RequestBody UserDto userDto) throws NotFoundException {
         return userServiceImpl.logintest(userDto);
     }
+    @GetMapping("/login test")
+    public String logintest(){
+    return "main";
+    }
 
     @GetMapping("/logintest")
     public UserDto logintest(@RequestBody UserDto userDto) throws NotFoundException {
